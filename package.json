@@ -1,0 +1,18 @@
+{
+  "name": "mf-bot-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "package": "zip -r lambda.zip . -x .git",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "request": "^2.83.0"
+  }
+}
