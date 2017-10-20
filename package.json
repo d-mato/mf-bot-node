@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "package": "zip -r lambda.zip . -x .git",
+    "zip": "zip -fr lambda.zip . -x .git",
+    "deploy": "npm run zip && aws lambda update-function-code --function-name MfBot --zip-file fileb://lambda.zip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
